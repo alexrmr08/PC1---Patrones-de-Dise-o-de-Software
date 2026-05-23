@@ -1,5 +1,11 @@
 package model;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import strategy.DiscountStrategy;
+import strategy.NoDiscountStrategy;
+
 public class Cart {
     
     private List<Product> products;
@@ -7,7 +13,7 @@ public class Cart {
 
     public Cart() {
         this.products = new ArrayList<>();
-        this.discountStrategy = new NoDiscount();
+        this.discountStrategy = new NoDiscountStrategy();
     }
 
     public void addProduct(Product product) {
