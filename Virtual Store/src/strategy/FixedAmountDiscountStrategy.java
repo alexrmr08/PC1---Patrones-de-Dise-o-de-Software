@@ -9,9 +9,10 @@ public class FixedAmountDiscountStrategy implements DiscountStrategy {
     }
     
     @Override
-    public double applyDiscount(double total) {{
+    public double applyDiscount(double total) {
         double finalTotal = Math.max(0, total - fixedAmount);
         System.out.printf(" [Descuento] Monto fijo de S/. %2f descontado.%n", fixedAmount);
+        return finalTotal;
     }
 
 }
