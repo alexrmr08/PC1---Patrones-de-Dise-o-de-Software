@@ -21,4 +21,5 @@ public class Product {
     @Override
     public String toString() {
         return name + " (S/. " + String.format("%.2f", price) + ")";
+    }
 }
